@@ -1,7 +1,7 @@
 import { db } from "./firebase.js";
-import { inserirUsuario } from "./inserir.js";
-import { editarUsuario } from "./editar.js";
-import { excluirUsuario } from "./excluir.js";
+import { inserirUsuario } from "./enviarDados.js";
+import { editarUsuario } from "./editardados.js";
+import { excluirUsuario } from "./excluirDados.js";
 
 import {
     collection,
