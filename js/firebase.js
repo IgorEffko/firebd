@@ -2,15 +2,13 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBS0-Fckg_4ve0CQLuAJg5hr-zTa0cvezU",
-    authDomain: "cinevortex-dd43a.firebaseapp.com",
-    projectId: "cinevortex-dd43a",
-    storageBucket: "cinevortex-dd43a.firebasestorage.app",
-    messagingSenderId: "181268129538",
-    appId: "1:181268129538:web:96cc0b8f0a7b4e5535c41b"
+apiKey: "AIzaSyCDpeu2wq4vbEdABiqclO_lBw13AA71x7A",
+authDomain: "aulaunioeste-a158a.firebaseapp.com",
+projectId: "aulaunioeste-a158a",
+storageBucket: "aulaunioeste-a158a.firebasestorage.app",
+messagingSenderId: "18771439631",
+appId: "1:18771439631:web:86e115f4e856a49cfbf37a"
 };
 
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-
-export { app, db };
+export const db = getFirestore(app);

@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CineVortex - Cadastro</title>
+
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+
+<body>
+
+    <h1>CineVortex</h1>
+
+    <div class="container">
+
+        <h2 id="tituloForm">Cadastrar usuário</h2>
+
+    
+        <form id="formUsuario">
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Nome completo"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="E-mail"
+                required
+            >
+
+            <button type="submit" id="btnSalvar" class="salvar">
+                Cadastrar
+            </button>
+
+            <button type="button" id="btnCancelar" class="cancelar" hidden>
+                Cancelar edição
+            </button>
+
+        </form>
+
+        
+        <p id="mensagem"></p>
+
+     
+        <h2>Usuários cadastrados</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody id="listaUsuarios">
+            
+            </tbody>
+        </table>
+
+    </div>
+
+    
+
+    
+    <script type="module" src="js/firebase.js"></script>
+
+   
+    <script type="module" src="js/enviarDados.js"></script>
+
+    
+    <script type="module" src="js/lerdados.js"></script>
+
+    
+    <script type="module" src="js/editardados.js"></script>
+
+   
+    <script type="module" src="js/excluirDados.js"></script>
+
+</body>
+</html>
